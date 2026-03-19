@@ -15,6 +15,7 @@ const mimeTypes = {
   '.gif': 'image/gif',
   '.svg': 'image/svg+xml',
   '.ico': 'image/x-icon',
+  '.webp': 'image/webp',
   '.woff': 'font/woff',
   '.woff2': 'font/woff2',
   '.ttf': 'font/ttf',
@@ -26,7 +27,10 @@ const mimeTypes = {
   '.wav': 'audio/wav',
 };
 
+console.log('[v0] Starting server...');
+
 const server = http.createServer((req, res) => {
+  console.log('[v0] Request:', req.url);
   let filePath = req.url === '/' ? '/index.html' : req.url;
   
   // Handle clean URLs (no extension)

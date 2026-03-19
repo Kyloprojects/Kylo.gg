@@ -1,8 +1,39 @@
 :root {
+  /* Brand colors */
   --theme-brand_primary: 13, 97, 243;
   --theme-brand_secondary: 13, 97, 243;
   --theme-brand_gradient: linear-gradient(60deg, rgb(13, 97, 243), rgba(13, 97, 243, 0.9));
   --theme-brand_gradient_webkit: linear-gradient(60deg, rgb(13, 97, 243), rgba(13, 97, 243, 0.9));
+  
+  /* Background colors - dark theme */
+  --theme-area_background: 22, 24, 33;
+  --theme-area_background_reset: 22, 24, 33;
+  --theme-area_background_dark: 15, 17, 24;
+  --theme-area_background_light: 31, 35, 48;
+  --theme-area_background_veryLight: 46, 50, 65;
+  --theme-area_background_lighter: 39, 42, 55;
+  
+  /* Text colors */
+  --theme-text_color: 255, 255, 255;
+  --theme-text_light: 170, 175, 190;
+  --theme-link_color: 13, 97, 243;
+  --theme-link_hover: 30, 120, 255;
+  
+  /* Pricing */
+  --theme-price: 13, 97, 243;
+  
+  /* Form/input states */
+  --theme-active_input_border: 13, 97, 243;
+  
+  /* Header/Footer */
+  --theme-header_background: 15, 17, 24;
+  --theme-footer_background: 15, 17, 24;
+}
+
+/* Apply background to body */
+body, .ipsApp {
+  background-color: rgb(var(--theme-area_background_dark)) !important;
+  color: rgb(var(--theme-text_color)) !important;
 }
 /* Footer links hover effect */
 #elFooterLinks li a:hover {

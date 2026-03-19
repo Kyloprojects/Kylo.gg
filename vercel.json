@@ -2,25 +2,35 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/", "destination": "/index.html" },
+    { "source": "/", "destination": "/website/index.html" },
 
-    { "source": "/forum", "destination": "/forum.html" },
-    { "source": "/guides", "destination": "/guides.html" },
-    { "source": "/profile", "destination": "/profile.html" },
-    { "source": "/purchases", "destination": "/purchases.html" },
-    { "source": "/register", "destination": "/register.html" },
-    { "source": "/reviews", "destination": "/reviews.html" },
-    { "source": "/settings", "destination": "/settings.html" },
-    { "source": "/status", "destination": "/status.html" },
-    { "source": "/support", "destination": "/support.html" },
-    { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
-    { "source": "/terms-of-service", "destination": "/terms-of-service.html" },
-    { "source": "/topic", "destination": "/topic.html" },
+    { "source": "/forum", "destination": "/website/forum.html" },
+    { "source": "/guides", "destination": "/website/guides.html" },
+    { "source": "/profile", "destination": "/website/profile.html" },
+    { "source": "/purchases", "destination": "/website/purchases.html" },
+    { "source": "/register", "destination": "/website/register.html" },
+    { "source": "/reviews", "destination": "/website/reviews.html" },
+    { "source": "/settings", "destination": "/website/settings.html" },
+    { "source": "/status", "destination": "/website/status.html" },
+    { "source": "/support", "destination": "/website/support.html" },
+    { "source": "/privacy-policy", "destination": "/website/privacy-policy.html" },
+    { "source": "/terms-of-service", "destination": "/website/terms-of-service.html" },
+    { "source": "/topic", "destination": "/website/topic.html" },
 
-    { "source": "/products/rust", "destination": "/products/rust.html" },
-    { "source": "/products/r6s", "destination": "/products/r6s.html" },
-    { "source": "/products/arc-raiders", "destination": "/products/arc-raiders.html" },
-    { "source": "/products/hwid-unban", "destination": "/products/hwid-unban.html" }
+    { "source": "/products/rust", "destination": "/website/products/rust.html" },
+    { "source": "/products/r6s", "destination": "/website/products/r6s.html" },
+    { "source": "/products/arc-raiders", "destination": "/website/products/arc-raiders.html" },
+    { "source": "/products/hwid-unban", "destination": "/website/products/hwid-unban.html" },
+
+    { "source": "/code-theme/:path*", "destination": "/website/code-theme/:path*" },
+    { "source": "/products/:path*", "destination": "/website/products/:path*" },
+    { "source": "/images/:path*", "destination": "/website/images/:path*" },
+
+    { "source": "/cart.js", "destination": "/website/cart.js" },
+    { "source": "/supabase-auth.js", "destination": "/website/supabase-auth.js" },
+    { "source": "/purchases-client.js", "destination": "/website/purchases-client.js" },
+
+    { "source": "/:file", "destination": "/website/:file" }
   ],
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true },

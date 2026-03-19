@@ -1,10 +1,29 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+
+    { "source": "/forum", "destination": "/forum.html" },
+    { "source": "/guides", "destination": "/guides.html" },
+    { "source": "/profile", "destination": "/profile.html" },
+    { "source": "/purchases", "destination": "/purchases.html" },
+    { "source": "/register", "destination": "/register.html" },
+    { "source": "/reviews", "destination": "/reviews.html" },
+    { "source": "/settings", "destination": "/settings.html" },
+    { "source": "/status", "destination": "/status.html" },
+    { "source": "/support", "destination": "/support.html" },
+    { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/terms-of-service", "destination": "/terms-of-service.html" },
+    { "source": "/topic", "destination": "/topic.html" },
+
+    { "source": "/products/rust", "destination": "/products/rust.html" },
+    { "source": "/products/r6s", "destination": "/products/r6s.html" },
+    { "source": "/products/arc-raiders", "destination": "/products/arc-raiders.html" },
+    { "source": "/products/hwid-unban", "destination": "/products/hwid-unban.html" }
+  ],
   "redirects": [
-
     { "source": "/index.html", "destination": "/", "permanent": true },
-
 
     { "source": "/forum.html", "destination": "/forum", "permanent": true },
     { "source": "/guides.html", "destination": "/guides", "permanent": true },
@@ -18,8 +37,6 @@
     { "source": "/privacy-policy.html", "destination": "/privacy-policy", "permanent": true },
     { "source": "/terms-of-service.html", "destination": "/terms-of-service", "permanent": true },
     { "source": "/topic.html", "destination": "/topic", "permanent": true },
-
-
 
     { "source": "/products/rust.html", "destination": "/products/rust", "permanent": true },
     { "source": "/products/r6s.html", "destination": "/products/r6s", "permanent": true },

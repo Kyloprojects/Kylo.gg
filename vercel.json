@@ -1,0 +1,29 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    // maim
+    { "source": "/index.html", "destination": "/", "permanent": true },
+
+    //other
+    { "source": "/forum.html", "destination": "/forum", "permanent": true },
+    { "source": "/guides.html", "destination": "/guides", "permanent": true },
+    { "source": "/profile.html", "destination": "/profile", "permanent": true },
+    { "source": "/purchases.html", "destination": "/purchases", "permanent": true },
+    { "source": "/register.html", "destination": "/register", "permanent": true },
+    { "source": "/reviews.html", "destination": "/reviews", "permanent": true },
+    { "source": "/settings.html", "destination": "/settings", "permanent": true },
+    { "source": "/status.html", "destination": "/status", "permanent": true },
+    { "source": "/support.html", "destination": "/support", "permanent": true },
+    { "source": "/privacy-policy.html", "destination": "/privacy-policy", "permanent": true },
+    { "source": "/terms-of-service.html", "destination": "/terms-of-service", "permanent": true },
+    { "source": "/topic.html", "destination": "/topic", "permanent": true },
+
+
+    // producst 
+    { "source": "/products/rust.html", "destination": "/products/rust", "permanent": true },
+    { "source": "/products/r6s.html", "destination": "/products/r6s", "permanent": true },
+    { "source": "/products/arc-raiders.html", "destination": "/products/arc-raiders", "permanent": true },
+    { "source": "/products/hwid-unban.html", "destination": "/products/hwid-unban", "permanent": true }
+  ]
+}
